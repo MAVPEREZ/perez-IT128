@@ -1,0 +1,6 @@
+C:\Users\Messi16\source\repos\PerezLE2\PerezBlogDB\bin\Debug\PerezBlogDB.dacpac
+C:\Users\Messi16\source\repos\PerezLE2\PerezBlogDB\bin\Debug\PerezBlogDB.dll
+C:\Users\Messi16\source\repos\PerezLE2\PerezBlogDB\bin\Debug\PerezBlogDB.pdb
+C:\Users\Messi16\source\repos\PerezLE2\PerezBlogDB\obj\Debug\PerezBlogDB.sqlproj.AssemblyReference.cache
+C:\Users\Messi16\source\repos\PerezLE2\PerezBlogDB\obj\Debug\PerezBlogDB.dll
+C:\Users\Messi16\source\repos\PerezLE2\PerezBlogDB\obj\Debug\PerezBlogDB.pdb
