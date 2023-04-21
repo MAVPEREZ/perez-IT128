@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Frontend",
+    "\\Frontend\\src",
+    "\\Frontend\\src\\app",
+    "\\Frontend\\src\\app\\components",
+    "\\Frontend\\src\\app\\components\\list-posts",
+    "\\Frontend\\src\\app\\components\\login-page",
+    "\\Frontend\\src\\app\\components\\post-detail",
+    "\\Frontend\\src\\app\\components\\register-page",
+    "\\Frontend\\src\\app\\models"
+  ],
+  "SelectedNode": "\\Frontend\\src\\app\\app-routing.module.ts",
+  "PreviewInSolutionExplorer": false
+}
