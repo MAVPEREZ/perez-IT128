@@ -1,0 +1,147 @@
+<section class="dis-header">
+  <div class="navbar">
+    <a routerLink="/login"><img src="../assets/images/LOGO.png" class="logo"></a>
+    <ul>
+      <li> <a routerLink="/register"> Register</a></li>
+      <li> <a routerLink="/login">Login</a></li>
+      <li> <a routerLink="/list-posts">Posts</a></li>
+
+    </ul>
+  </div>
+  <h1>MY BLOGDB REGISTRATION FORM</h1>
+</section>
+
+
+<html>
+<head>
+  <title>MYBLOGDB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a229140a38.js" crossorigin="anonymous"></script>
+  <title>Sign Up</title>
+
+  <style>
+    /* Center */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    /* form */
+    form {
+      background-color: #fff;
+      padding: 45px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ddd;
+      position: relative;
+      transition: all 1.0s ease-in-out;
+    }
+
+      /* hover effect */
+      form:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+    /*  labels */
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    /*  input fields */
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px #ddd;
+      font-size: 16px;
+    }
+
+    /* submit button */
+    button[type="submit"] {
+      background-color: burlywood;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* sign up message */
+    .message {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: burlywood;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    button:hover {
+      background-color: #000000;
+    }
+    .logo {
+      width: 100px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
+      <div class="message">Please sign up</div>
+      <label for="username">Username</label>
+      <input type="text"
+             name="username"
+             [(ngModel)]="form.username"
+             required
+             #username="ngModel" />
+
+      <label for="password">Password</label>
+      <input type="password"
+             name="password"
+             [(ngModel)]="form.password"
+             required
+             #password="ngModel" />
+
+      <label for="firstName">First Name</label>
+      <input type="text"
+             name="firstName"
+             [(ngModel)]="form.firstName"
+             required
+             #firstName="ngModel" />
+
+      <label for="lastName">Last Name</label>
+      <input type="text"
+             name="lastName"
+             [(ngModel)]="form.lastName"
+             required
+             #lastName="ngModel" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+
+</body>
+</html>
+
+

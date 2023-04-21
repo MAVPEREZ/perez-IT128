@@ -1,0 +1,30 @@
+<head>
+  <title>MYBLOGDB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a229140a38.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<section class="dis-header">
+  <div class="navbar">
+    <a routerLink="/login"><img src="../assets/images/LOGO.png" class="logo"></a>
+    <ul>
+      <li> <a routerLink="/register"> Register</a></li>
+      <li> <a routerLink="/login">Login</a></li>
+      <li> <a routerLink="/list-posts">Posts</a></li>
+    </ul>
+  </div>
+  <h1>MY BLOGDB LIST POSTS</h1>
+</section>
+
+
+
+<div class="post-detail">
+  <h3><a href="/posts/{{ post?.id }}"> {{ post?.title }} </a></h3>
+  <p>by {{ post?.firstName }} {{ post?.lastName }}; on {{ post?.dateCreated}}</p>
+  <p>{{ post?.body }}</p>
+  <button class="back-button" onclick="window.location.href='/list-posts'">Back to List Posts</button>
+</div>

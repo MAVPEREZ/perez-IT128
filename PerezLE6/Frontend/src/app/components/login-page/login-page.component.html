@@ -1,0 +1,114 @@
+<section class="dis-header">
+  <div class="navbar">
+    <a routerLink="/login"><img src="../assets/images/LOGO.png" class="logo"></a>
+    <ul>
+      <li> <a routerLink="/register"> Register</a></li>
+      <li> <a routerLink="/login">Login</a></li>
+      <li> <a routerLink="/list-posts">Posts</a></li>
+
+    </ul>
+  </div>
+  <h1 style="font-size: 22px">MY BLOGDB LOGIN FORM</h1>
+</section>
+
+<html>
+<head>
+  <title>MYBLOGDB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a229140a38.js" crossorigin="anonymous"></script>
+  <title>LOG IN</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      padding: 60px 40px 40px 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      max-width: 350px;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+      margin-right: 50px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      max-width: 350px;
+      background-color: burlywood;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+      button:hover {
+        background-color: black;
+      }
+
+    .logo {
+      width: 100px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+  <body>
+    <div class="login-container">
+      <h1>Welcome Back</h1>
+      <h3>Login Here</h3>
+      <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+        <div>
+          <label for="username">Email</label>
+          <input required type="text" name="username" [(ngModel)]="form.username" #username="ngModel">
+
+          <label for="password">Password</label>
+          <input type="password" name="password" [(ngModel)]="form.password" required #password="ngModel">
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
